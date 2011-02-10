@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+{% if forloop.first %}<div class="archive">{% endif %}
+<div class="post">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<div class="date">{{ post.date | date: "%d.%m.%Y" }} /</div>
+</div>
+{% if forloop.last %}{% unless forloop.first %}</div>{% endunless %}{% endif %}
+{% endfor %}
+<h1 class="other">Мои статьи на других сайтах</h1>
+<div class="archive">
+	<div class="post">
+		<h2><a href="http://trilandev.com/blog/8">Шаблоны для 404 и 500 ошибок в режиме отладки</a> (trilandev.com)</h2>
+		<div class="date">09.02.2011 /</div>
+	</div>
+	<div class="post">
+		<h2><a href="http://trilandev.com/blog/7">Отложенный вызов datetime.now в queryset'ах</a> (trilandev.com)</h2>
+		<div class="date">09.02.2011 /</div>
+	</div>
+	<div class="post">
+		<h2><a href="http://trilandev.com/blog/5">django-taggit и русские теги</a> (trilandev.com)</h2>
+		<div class="date">04.02.2011 /</div>
+	</div>
+</div>

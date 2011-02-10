@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Cuprum";
+    src: local("CuprumFFU"), url("../fonts/cuprum.otf");
+}
+
+body {
+    font: normal normal normal 16px/24px helvetica, arial, clean, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Cuprum", "Trebuchet MS", helvetica, arial, sans-serif;
+    color: #A00;
+}
+
+h1 a {
+    color: #A00;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    margin: 0 auto;
+    width: 860px;
+}
+
+#container a {
+    color: #A00;
+}
+
+#header {
+    padding: 4em 8em 1em;
+    border-bottom: #EFEFEF 3px solid;
+}
+
+#content {
+    padding: 2em 8em 0;
+}
+
+.archive {
+    padding: 0 0 1em;
+}
+
+#footer {
+    border-top: #EFEFEF 3px solid;
+    text-align: right;
+    color: #AAAAAA;
+    padding: 1em 8em 2em;
+    font-family: "Cuprum", "Trebuchet MS", helvetica, arial, sans-serif;
+}
+
+.post {
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.post h2 {
+    font-size: 1.4em;
+    font-family: "Cuprum", "Trebuchet MS", helvetica, arial, sans-serif;
+}
+
+.post h2 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.post h2 a:hover {
+    color: #A00;
+    text-decoration: underline;
+}
+
+.post .date {
+    font-family: "Cuprum", "Trebuchet MS", helvetica, arial, sans-serif;
+    color: #AAAAAA;
+    position: absolute;
+    text-align: right;
+    width: 7.7em;
+    margin-left: -8em;
+    margin-top: -1.7em;
+}
+
+.post p {
+    margin: 1em 0;
+}
+
+.other {
+    color: #000;
+    margin-bottom: 1em;
+}
